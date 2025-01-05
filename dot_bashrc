@@ -1,0 +1,52 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+#alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias stat='bpytop'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias filemgr='ranger'
+alias img2ascii='ascii-image-converter'
+alias viewtrash='trash-list'
+alias hist='atuin history list'
+alias qman='tldr'
+alias typetest='toipe'
+alias word='wordgrinder'
+alias fish='asciiquarium'
+alias cool='coolercontrol'
+alias sound='cava'
+alias files='ranger'
+alias devices='piper'
+
+PS1='[\u@\h \W]\$ '
+
+# favourite applications
+# bat 
+# cpufetch
+# gdu
+# imagemagick
+# magick
+# ffmpeg
+# lsd
+# speedtest
+# ranger
+# trash
+# fzf "fuzzyfind"
+
+
+neofetch
+
+
+# atuin setups
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
