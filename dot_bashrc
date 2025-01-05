@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+# This .bashrc is version controlled using chezmoi. 
+# visit https://www.chezmoi.io/quick-start/#start-using-chezmoi-on-your-current-machine to learn more
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
