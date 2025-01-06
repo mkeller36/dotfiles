@@ -12,11 +12,26 @@
 #alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias stat='bpytop'
+
+# ls alias's 
 alias ls='lsd'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+
+# git alias's
+alias gs='git status'
+alias ga='git add' 
+alias gaa='git add .'
+alias gc='git commit -m'
+alias gl='git log --oneline'
+
+# chezmoi alias's
+alias ca='chezmoi add'
+alias ccd='chezmoi cd'
+
+alias c='clear'
 alias filemgr='ranger'
 alias img2ascii='ascii-image-converter'
 alias viewtrash='trash-list'
