@@ -46,8 +46,6 @@ alias sound='cava'
 alias files='ranger'
 alias devices='piper'
 
-PS1='[\u@\h \W]\$ '
-
 # favourite applications
 # bat 
 # cpufetch
@@ -61,18 +59,34 @@ PS1='[\u@\h \W]\$ '
 # trash
 # fzf "fuzzyfind"
 
- 
+# run on start
+echo ' '
 neofetch
 
 #github branch displayed on terminal setup 
 parse_git_branch() {
-git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' | sed 's|[(),]||g' | awk '{print "." $0}'
 }
-export PS1=" \u@\e[0;34m\]\h \[\e[32m\]\W\[\e[91m\]\
-$(parse_git_branch)\[\e[00m\]$ "
 
-# atuin setups
+# prompt coloring setup
+# This function was created referencing
+# https://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix>
+# https://www.geeksforgeeks.org/how-to-customize-bash-colors-and-content-in-linux-terminal-prompt/
+# I would recommend refering to these as whatever language is used to format this is garbage
+# You will also need to put this code in the ~/.bashrc file as root (sudo su to enter)
+
+# Turn the prompt symbol red if the user is root
+if [ $(id -u) -eq 0 ];
+then # you are root, make the prompt red
+    PS1="[\e[0;31m\u\e[m@\e[0;34m\h\e[m:\e[0;32m\w\e[m]\$ "
+else
+    PS1="[\e[0:36m\u\e[m@\e[0;34m\h\e[m:\e[0;32m\w\e[m\e[0;37m\$(parse_git_branch)\e[m]\$ "
+fi
+# /prompt coloring setup
+
+# atuin setup
 . "$HOME/.atuin/bin/env"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+# /atuin setup
