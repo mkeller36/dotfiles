@@ -1,0 +1,9 @@
+background-opacity = 0.9
+# blur radius is only supported on mac at the moment, leaving this here in case future support is added 
+# background-blur-radius = 100
+
+theme = GruvboxDark
+
+# Uncomment one to set shell
+shell-integration = bash
+#shell-integration = zsh
