@@ -13,6 +13,11 @@
 alias grep='grep --color=auto'
 alias stat='bpytop'
 
+# benchmark
+alias benchmark-knot='furmark --demo furmark-knot-gl'
+alias benchmark-donut='furmark --demo furmark-gl'
+alias gpufetch='furmark --glinfo'
+
 # ls alias's 
 alias ls='lsd'
 alias ll='ls -l'
@@ -29,6 +34,7 @@ alias gp='git push'
 alias gl='git log --oneline'
 
 # chezmoi alias's
+alias cs='chezmoi status'
 alias ca='chezmoi add'
 alias ccd='chezmoi cd'
 
