@@ -1,3 +1,4 @@
 "Michael Keller's vim config
 
 syntax on
+set number
