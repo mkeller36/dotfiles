@@ -54,6 +54,7 @@ alias cool='coolercontrol'
 alias sound='cava'
 alias files='ranger'
 alias devices='piper'
+alias emacs='emacs -nw'
 
 # favourite applications
 # bat 
@@ -69,8 +70,10 @@ alias devices='piper'
 # fzf "fuzzyfind"
 
 # run on start
-echo ' '
+
 neofetch
+# cbonsai -p
+
 
 #github branch displayed on terminal setup 
 parse_git_branch() {
