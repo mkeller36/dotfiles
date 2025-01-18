@@ -17,6 +17,7 @@ alias stat='bpytop'
 alias benchmark-knot='furmark --demo furmark-knot-gl'
 alias benchmark-donut='furmark --demo furmark-gl'
 alias gpufetch='furmark --glinfo'
+alias gpuinfo='nvtop'=:wq
 
 # ls alias's 
 alias ls='lsd'
