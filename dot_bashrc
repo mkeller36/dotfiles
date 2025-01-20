@@ -39,6 +39,7 @@ alias cs='chezmoi status'
 alias ca='chezmoi add'
 alias ccd='chezmoi cd'
 
+alias build='cd build/; cmake ..; make; cd ..'
 alias list-cams='v4l2-ctl --list-devices'
 alias grow='cbonsai -il'
 alias c='clear'
