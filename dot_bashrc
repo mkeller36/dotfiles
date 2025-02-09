@@ -19,6 +19,7 @@ alias openCV='ssh pi@192.168.1.144'
 alias vim='nvim'
 alias grep='grep --color=auto'
 alias stat='bpytop'
+alias chrome='firefox'
 
 # benchmark
 alias benchmark-knot='furmark --demo furmark-knot-gl'
