@@ -80,6 +80,8 @@ alias emacs='emacs -nw'
 # trash
 # fzf "fuzzyfind"
 
+export PICO_SDK_PATH="/home/mkeller/.pico_sdk/pico-sdk"
+
 # run on start
 
 neofetch
