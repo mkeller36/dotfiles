@@ -8,15 +8,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# set default editor
-export EDITOR=nvim
-
 # network alias's
 alias embedded='ssh pi@192.168.1.148'
 alias openCV='ssh pi@192.168.1.144'
 
 # helpful alias's
-alias vim='nvim'
 alias grep='grep --color=auto'
 alias stat='bpytop'
 alias chrome='firefox'
