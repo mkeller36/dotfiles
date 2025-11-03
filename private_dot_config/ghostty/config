@@ -9,5 +9,5 @@ cursor-style = block
 cursor-style-blink = true 
 
 # Uncomment one to set shell
-#shell-integration = bash
+shell-integration = bash
 #shell-integration = zsh
