@@ -19,12 +19,13 @@ alias openCV='ssh pi@192.168.1.144'
 alias grep='grep --color=auto'
 alias stat='bpytop'
 alias chrome='firefox'
+alias network='firefox http://192.168.1.254'
 
 # benchmark
 alias benchmark-knot='furmark --demo furmark-knot-gl'
 alias benchmark-donut='furmark --demo furmark-gl'
 alias gpufetch='furmark --glinfo'
-alias gpuinfo='nvtop'=:wq
+alias gpuinfo='nvtop'
 
 # ls alias's 
 alias ls='lsd'
