@@ -20,6 +20,7 @@ alias grep='grep --color=auto'
 alias stat='bpytop'
 alias chrome='firefox'
 alias network='firefox http://192.168.1.254'
+alias keyboard='keymapp'
 
 # benchmark
 alias benchmark-knot='furmark --demo furmark-knot-gl'
